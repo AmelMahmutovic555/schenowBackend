@@ -1,0 +1,60 @@
+@LifeMap_HostAddress = https://localhost:7159
+
+GET {{LifeMap_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{LifeMap_HostAddress}}/user/register
+Content-Type: application/json
+{
+  "name": "Amel",
+  "surname": "Mahmutovic",
+  "email": "amel@live.com",
+  "password": "amel"
+}
+
+###
+
+POST {{LifeMap_HostAddress}}/user/login
+Content-Type: application/json
+{
+  "email": "amel@live.com",
+  "password": "amel"
+}
+
+###
+
+GET {{LifeMap_HostAddress}}/user/me
+# Accept: application/json
+
+###
+
+GET {{LifeMap_HostAddress}}/habits/1
+Accept: application/json
+
+###
+
+GET {{LifeMap_HostAddress}}/timeslot/all
+Accept: application/json
+
+###
+
+PUT {{LifeMap_HostAddress}}/timeslot/book/2026-10-12/16:52:29/22:46:35
+Content-Type: application/json
+{
+  "name": "Amel",
+  "email": "amel@live.com",
+  "available": false
+}
+
+###
+
+POST {{LifeMap_HostAddress}}/timeslot/add
+Content-Type: application/json
+{
+  "date": "2026-10-12",
+  "from": "16:33:11",
+  "to": "15:13:55",
+  "available": false
+}

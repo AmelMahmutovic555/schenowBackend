@@ -1,0 +1,13 @@
+
+# Visual Studio
+.vs/
+*.user
+
+# Build files
+bin/
+obj/
+
+# Environment variables and secrets
+.env
+.env.*
+secrets.json
