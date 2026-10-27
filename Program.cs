@@ -26,7 +26,7 @@ namespace LifeMap
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:3000", "https://schenow-frontend-three.vercel.app", "https://schenow-type-script-frontend-kt6p-kappa.vercel.app")
+                                      builder.WithOrigins("http://localhost:3000", "https://schenow-frontend-three.vercel.app", "https://schenow-type-script-frontend-i5hx.vercel.app")
                                       .AllowAnyHeader()
                                       .AllowAnyMethod()
                                       .AllowCredentials();
